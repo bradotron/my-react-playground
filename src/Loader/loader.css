@@ -1,0 +1,56 @@
+.loader {
+	width: 3rem;
+  height: 3rem;
+	border: 3px solid rgba(255, 0, 0, 1);
+	border-radius: 50%;
+	border-top-color: rgba(255, 0, 0, 0);
+  animation: rainbow 5s linear infinite, spinner 2s linear infinite;
+  background-color: inherit;
+}
+
+@keyframes spinner {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes rainbow {
+	0%,
+	100% {
+		border-color: rgb(255, 0, 0);
+		border-top-color: rgba(255, 0, 0, 0);
+	}
+
+	14% {
+		border-color: rgb(255, 127, 0);
+		border-top-color: rgba(255, 0, 0, 0);
+	}
+
+	28% {
+		border-color: rgb(255, 255, 0);
+		border-top-color: rgba(255, 0, 0, 0);
+	}
+
+	42% {
+		border-color: rgb(0, 255, 0);
+		border-top-color: rgba(255, 0, 0, 0);
+	}
+
+	56% {
+		border-color: rgb(0, 0, 255);
+		border-top-color: rgba(255, 0, 0, 0);
+	}
+
+	70% {
+		border-color: rgb(75, 0, 130);
+		border-top-color: rgba(255, 0, 0, 0);
+	}
+
+	84% {
+		border-color: rgb(148, 0, 211);
+		border-top-color: rgba(255, 0, 0, 0);
+	}
+}
